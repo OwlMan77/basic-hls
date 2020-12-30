@@ -1,0 +1,16 @@
+{
+  "name": "ffmpeg-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/index.js",
+    "start": "start chrome file:///$(pwd -W)/src/client/index.html && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}

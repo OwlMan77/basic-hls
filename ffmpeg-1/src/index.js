@@ -8,4 +8,4 @@ ffmpeg(`${__dirname}/input/Free_Apple.mp4`, { timeout: 432000 }).addOptions([
     '-hls_time 10',        // 10 second segment duration
     '-hls_list_size 12',    // Maxmimum number of playlist entries (0 means all entries/infinite)
     '-f hls'               // HLS format
-  ]).output(`${__dirname}/output/free_apple.m3u8`).on('end', (data) => console.log(data)).run()
+  ]).output(`${__dirname}/output/free_apple.m3u8`).on('end', (data) => process.exit(0)).run()
